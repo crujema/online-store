@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certified Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Certified Gadgets</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Future on<br>your hands</h2>
+                <p>The future of health is on your wrist.It has the ability to check your Blood O<sup>2</sup>. A breath of fresh innovation and technology.<br>Start shopping now with our discounted prices! We offer countrywide delivery.
+                </p>
+                <a href="store.html" target="blank">Buy Now</a>
+            </div>
+            <div class="imgBx">
+                <img src="images/Sd.png">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="images/instagram-bnw.png"></a></li>
+            <li><a href="#"><img src="images/whatsapp-bnw.png"></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="latest.html">Latest Products</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Products</title>
+    <link rel="stylesheet" href="latest.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Certified Gadgets</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+    <div class="card">
+        <div class="cover"> 
+            <img src="images/Fitbit-Versa.png">
+        </div>
+        <div class="details">
+            <div>
+                <img src="images/fitbit.png">
+                <h3>New Fitbit Smartwatch</h3>
+                <h2><sup>Ksh</sup>4,500</h2>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="latest.html">Latest Products</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</section>
+<script type="text/javascript">
+    function toggle(){
+        const toggle = document.querySelector('.toggle');
+        const banner = document.querySelector('.banner');
+        toggle.classList.toggle('active')
+        banner.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
